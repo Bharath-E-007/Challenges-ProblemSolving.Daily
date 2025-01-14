@@ -8,7 +8,7 @@
    1<= Length of S1, S2 <= 1000
  */
 import java.util.*;
-public class Hello {
+public class Challenge1 {
 public static void main(String[] args) {
   Scanner sc=new Scanner(System.in);
   String str1=sc.nextLine(),str2=sc.nextLine();

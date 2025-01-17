@@ -16,13 +16,16 @@ public static void Fibo(String s1, String s2, int n ){
   }
 }
 /* Example Input/Output 1:
-
-Input: 6
-
+Input: 
+6
 Output:
-
+a b ba bab babba babbabab
 Explanation:
-
-Here N = 6 and the first two terms in the Fibonacci words are "a" and "b". The 3rd term in the Fibonacci words is ba ("b" + "a"). The 4th term in the Fibonacci words is bab ("ba" + "b"). The 5th term in the Fibonacci words is babba ("bab" + "ba"). The 6th term in the Fibonacci words is babbabab ("babba" + "bab").
-
-Hence the output is*/
+Here N = 6 and the first two terms in the Fibonacci words are "a" and "b".
+ The 3rd term in the Fibonacci words is ba ("b" + "a"). 
+ The 4th term in the Fibonacci words is bab ("ba" + "b"). 
+ The 5th term in the Fibonacci words is babba ("bab" + "ba"). 
+ The 6th term in the Fibonacci words is babbabab ("babba" + "bab").
+  Hence the output is  
+  a b ba bab babba babbabab
+ */

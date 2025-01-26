@@ -22,3 +22,44 @@ public class binaryStringFrom {
     }
 
 }
+/*
+ * Output Format:
+ * 
+ * The first line contains the string values obtained separated by a space.
+ * 
+ * Example Input/Output 1:
+ * 
+ * Input:
+ * 
+ * universe
+ * 
+ * Hello
+ * 
+ * Output:
+ * 
+ * uNivErse uNiveRsE UNIvERse uNIvERse UNIVERSE
+ * 
+ * Explanation:
+ * 
+ * S1 = universe S2 = Hello
+ * 
+ * ASCII value of H = 72 -> 01001000 -> uNivErse
+ * 
+ * ASCII value of e = 101 -> 01100101 -> uNiveRsE
+ * 
+ * ASCII value of 1 = 108 -> 01101100 -> uNIvERse
+ * 
+ * ASCII value of I = 108 -> 01101100 -> uNIvERse
+ * 
+ * ASCII value of o = 111 -> 01101111 -> UNIVERSE
+ * 
+ * Example Input/Output 2:
+ * 
+ * Input:
+ * 
+ * goodluck 123#5
+ * 
+ * Output:
+ * 
+ * goodluck goODluCk goODluCK goodluCK goODIUCK
+ */

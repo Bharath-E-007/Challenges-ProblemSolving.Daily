@@ -26,3 +26,8 @@ public class Palindrome {
         return s.equals(new StringBuilder(s).reverse().toString());
     }
 }
+/*
+ * check a given String is Plaindrome or not it check full String and alphabetic
+ * in the String and Digit in
+ * String is Palindrome or not;
+ */

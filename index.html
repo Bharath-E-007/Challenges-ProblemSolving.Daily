@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <style>
+        body{
+            margin-left: 40px;
+            margin-right: 40px;
+           background-color: blueviolet;
+        }
+        #main{
+            font-size: 5em;
+            text-align: center;
+            color:orange;
+        }
+        #in{
+            background-color: black;
+            color: whitesmoke;
+            border:2px double;
+            width:200px;
+            height: 50px;
+            position: relative; 
+            top:40%;
+            left: 40%;
+        }
+        #submit,#close{
+            background-color: bisque;
+            color: black;
+            border:2px double;
+            width:150px;
+            height: 30px;
+            position: relative; 
+            top:40%;
+            left: 42%;
+        }
+        #content{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            font-size: 5em;
+            text-align: center;
+        }
+        #final{
+            font-family: Arial, Helvetica, sans-serif;
+            color: yellowgreen;
+            font-size: 5em;
+            text-align: center;
+        }
+        button:active{
+            background-color: firebrick;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div id="Containers">
+        <marquee diection="Right"><div id="main">Guest a Number.....</div></marquee><br><br>
+        <input type="number" id="in" ><br><br>
+        <button id="submit" onclick="rand()">Submit</button><br>
+        <p style="text-align: center; font-size: 3em; color: black;">Guest The Number Between 1 to 10</p>
+        <p id="content"></p>
+        <br>
+        <button style="text-align: center; position: relative; left: 40%;" id="close">Close</button>
+        <p id="final"></p>
+    </div>
+    <script>
+       function rand(){
+            let num=Math.ceil(Math.random()*10);
+            console.log(num);
+            let val=Number(document.getElementById("in").value);
+            if(val==num){
+                document.getElementById("content").textContent="Your Choice Is Right "+num;
+            }else if(val>num){
+                document.getElementById("content").textContent="Your Choice Is Big "+num;        
+            }else{
+                document.getElementById("content").textContent="Your Choice Is Small "+num;  
+            }
+       }
+       document.getElementById("close").onclick=function(){
+        document.getElementById("final").textContent="Thank You";
+       }
+    </script>
+</body>
+</html>
